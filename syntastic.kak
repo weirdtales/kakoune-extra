@@ -56,7 +56,7 @@ syntastic-declare-filetype "d" \
 
 ## FIXME: `gometalinter` only takes directories as argument, create a wrapper
 syntastic-declare-filetype "go" \
-    'gometalinter' \
+    'golint-kak' \
     'gofmt -e -s'
 
 syntastic-declare-filetype "python" \

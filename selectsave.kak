@@ -4,7 +4,7 @@
 ##
 
 decl -docstring "path to the directory in which the cache is stored" \
-    str selectsave_path_dir_cache %sh{printf %s "${XDG_CONFIG_HOME:-${HOME}/.config}/kak"}
+    str selectsave_path_dir_cache %sh{printf %s "${XDG_DATA_HOME:-${HOME}/.local/share}/kak"}
 decl -docstring "full path to the cache file" str selectsave_path_cache "%opt{selectsave_path_dir_cache}/selections_desc.txt"
 
 hook global WinDisplay [^*].* %{ %sh{
